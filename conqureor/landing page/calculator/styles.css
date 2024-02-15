@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+body::-webkit-scrollbar{
+    background-color: black;
+}
+
+.calculator {
+    background-color:black;
+    border: 1px solid gold;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid gold;
+    color: gold;
+}
+button:hover{
+    box-shadow: inset 100px 0px 0px 0px gold;
+    color: black;
+    
+}
+
+button.equal {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+}
+
+#display {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 22px;
+    width: calc(100% - 20px);
+    background-color: black;
+    border: 1px solid gold;
+    color: gold;
+}
